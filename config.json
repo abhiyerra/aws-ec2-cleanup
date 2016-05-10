@@ -1,0 +1,9 @@
+{
+    "awsAccountId": "1234",
+    "chef": {
+        "organization": "acksin",
+        "version": "12.6.0",
+        "user_name": "foobar",
+        "key_path": "./chef_key.pem"
+    }
+}
