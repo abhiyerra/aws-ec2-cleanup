@@ -5,6 +5,7 @@ deps: README.html
 
 release:
 	zip -r opszero-aws-ec2-cleanup-$(VERSION).zip AwsEC2CleanupPolicy.json Makefile config.json index.js node_modules
+	cp opszero-aws-ec2-cleanup-$(VERSION).zip output.zip
 	curl -T opszero-aws-ec2-cleanup-$(VERSION).zip ftp://ftp.sendowl.com --user $(SENDOWL_FTP_USER):$(SENDOWL_FTP_PASSWORD)
 
 README.html:
