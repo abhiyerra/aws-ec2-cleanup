@@ -1,7 +1,7 @@
 {
     "name": "opszero-aws-ec2-cleanup",
     "version": "0.1.0",
-    "description": "Serverless Buy Button Powered By Stripe",
+    "description": "AWS Script which runs when ASG machines terminate",
     "main": "index.js",
     "license": "GPL-3.0",
     "repository": {
