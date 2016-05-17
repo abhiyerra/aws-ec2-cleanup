@@ -2,4 +2,16 @@
 
 * Introduction
 
-* Download
+The AWS EC2 Cleanup script runs upon a termination event on an EC2
+machine. This message is sent via SNS and handled in AWS Lambda. This
+allows you to remove nodes from Chef, Puppet, and other services which
+might be referring to EC2.
+
+* Provided
+
+This script provides the following:
+
+ - create SNS topic to be handled host termination events.
+ - parse SNS message
+ - delete node from Chef.
+ - adding additional cleanup scripts should be simple.
